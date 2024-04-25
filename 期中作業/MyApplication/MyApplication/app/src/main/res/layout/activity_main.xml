@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="性別："
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="74dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/txvGender"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/txvGender"
+        app:layout_constraintTop_toBottomOf="@+id/txvGender">
+
+        <RadioButton
+            android:id="@+id/rdbboy"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="男生" />
+
+        <RadioButton
+            android:id="@+id/rdbgirl"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="女生" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txvOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="票種"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txvGender"
+        app:layout_constraintStart_toStartOf="@+id/txvGender"
+        app:layout_constraintTop_toBottomOf="@+id/txvGender"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <RadioButton
+            android:id="@+id/rdbAldult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成人(500)" />
+
+        <RadioButton
+            android:id="@+id/rdbChildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="孩童(250)" />
+
+        <RadioButton
+            android:id="@+id/rdbStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="學生(400)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="張數："
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextText" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="確定"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvOutput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
