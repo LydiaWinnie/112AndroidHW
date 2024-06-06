@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id" />
+    <item name="spinner_menu" type="id" />
+    <item name="tv_main_course" type="id" />
+    <item name="tv_side_dish" type="id" />
+    <item name="btn_main_course1" type="id" />
+    <item name="tv_drink" type="id" />
+    <item name="btn_main_course2" type="id" />
+    <item name="btn_main_course3" type="id" />
+    <item name="btn_main_course4" type="id" />
+    <item name="btn_side_dish1" type="id" />
+    <item name="btn_side_dish2" type="id" />
+    <item name="btn_side_dish3" type="id" />
+    <item name="btn_side_dish4" type="id" />
+    <item name="btn_drink1" type="id" />
+    <item name="btn_drink2" type="id" />
+    <item name="btn_drink3" type="id" />
+</resources>
